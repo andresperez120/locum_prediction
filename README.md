@@ -6,97 +6,84 @@
 ---
 
 ## Introduction
-The locum tenens industry connects healthcare providers with hospitals and clinics on a temporary basis. 
-Rates for locum work can fluctuate significantly depending on factors such as medical specialty, geographic location, 
-urgency of the position, and time of year. Despite the abundance of job postings, there is no widely available, 
-public-facing tool that analyzes these trends or predicts rate changes.
+The locum tenens industry connects healthcare providers with hospitals and clinics on a temporary basis. Rates for locum work can fluctuate significantly depending on factors such as medical specialty, geographic location, and urgency of the position. 
 
-This project aims to fill that gap by collecting locum job posting data, analyzing patterns in pay rates, and 
-building a simple forecasting model to anticipate future spikes. The end result could serve as a valuable 
-resource for both providers seeking optimal opportunities and staffing organizations aiming to set competitive rates.
+This project analyzes these trends by collecting job posting data from ProLocums. It cleans the data, extracts key features using NLP, and builds a predictive model to forecast hourly pay rates. The entire project is presented in an interactive Streamlit dashboard that allows users to explore market trends and predict pay rates for specific job criteria.
 
 ---
 
 ## Objectives
-1. **Data Collection** – Gather locum job postings containing pay rates, specialty, location, and start date.
-2. **Exploratory Analysis** – Identify trends in pay rates by specialty, state/city, and seasonality.
-3. **Visualization** – Build interactive charts and dashboards to display insights.
-4. **Prediction Model** – Train a model to forecast short-term pay rate changes by specialty and location.
-5. **Public Insights** – Provide a clear, accessible tool or report that others can use to explore trends.
+1. **Data Collection** – Gathers locum job postings from ProLocums, handling pagination to create a comprehensive raw dataset.
+2. **Data Processing** – Cleans the raw data, normalizes pay rates, and engineers new features, including NLP-derived flags from job descriptions.
+3. **Predictive Modeling** – Trains a Random Forest model to predict hourly pay rates based on job characteristics like specialty, location, duration, and specific requirements.
+4. **Interactive Dashboard** – Presents the findings through a multi-page Streamlit application, featuring a market overview and a pay rate predictor tool.
 
 ---
 
-## Recommended Steps
-1. **Select a Data Source**
-   - Use a public job boards with accessible locum postings.
-   - Starting point: [ProLocums](https://www.prolocums.com/job-search) (no login required).
-
-2. **Data Gathering**
-   - Use Python libraries such as `requests` + `BeautifulSoup` for HTML parsing.
-   - Alternatively, check if JSON endpoints are available in the network tab for direct structured data pulls.
-   - Store data in CSV or a database (e.g., SQLite, PostgreSQL).
-
-3. **Data Cleaning & Preparation**
-   - Standardize column names and formats.
-   - Convert pay ranges into numeric values (hourly/daily).
-   - Extract temporal features (month, season) from start dates.
-
-4. **Exploratory Data Analysis (EDA)**
-   - Average pay rate by specialty.
-   - Highest-paying states/cities.
-   - Seasonal trends in rates and demand.
-   - Identify specialties with the largest fluctuations.
-
-5. **Prediction**
-   - Create a time series model (e.g., ARIMA, Prophet) or regression model to forecast pay rates.
-   - Test accuracy using historical data splits.
-
-6. **Visualization**
-   - Use `Plotly`, `Dash`, or `Streamlit` for an interactive dashboard.
-   - Include filters for specialty, location, and date range.
-
-7. **Documentation & Sharing**
-   - Publish code and documentation on GitHub.
-   - Share visualizations publicly or deploy dashboard to platforms like Streamlit Cloud or Heroku.
+## Project Structure
+- **/data**: Contains raw and processed data. The final, cleaned dataset is stored in `data/processed/jobs.parquet`.
+- **/docs**: Contains project documentation, including key assumptions.
+- **/models**: Stores the trained machine learning model (`random_forest_model.joblib`) and test data splits.
+- **/notebooks**: Jupyter notebooks used for exploratory data analysis (`eda.ipynb`) and model prediction analysis (`prediction_analysis.ipynb`).
+- **/src**: All Python source code.
+  - `data_collection.py`, `data_cleaning.py`, `nlp_feature_extraction.py`, `modeling.py`: The core data pipeline scripts.
+  - `dashboard.py`: The main entry point for the Streamlit app.
+  - `pages/`: Each `.py` file here represents a page in the Streamlit app.
 
 ---
 
-## Recommended Public Data Source
-**ProLocums Job Board**  
-- URL: [https://www.prolocums.com/job-search](https://www.prolocums.com/job-search)  
-- Publicly accessible without login.  
-- Lists specialty, location, start date, and sometimes pay rates.  
-- Filterable by specialty and location, making targeted data collection easier.
+## Natural Language Processing (NLP)
+To enrich the dataset, key features were extracted from the HTML job descriptions. The process focused on parsing the text contained within bullet points (`<li>` tags), as these areas typically contain the most structured and valuable information.
 
----
-
-## Data Gathering Techniques
-- **Direct HTML Scraping**:  
-  - Use `requests` to fetch HTML and `BeautifulSoup` to parse listings.
-- **Network Sniffing for JSON**:  
-  - Check the browser developer tools “Network” tab to see if job listings load via a JSON API endpoint.
-- **Scheduled Data Collection**:  
-  - Run scraper daily with `cron` (Linux/macOS) or Task Scheduler (Windows) to build a time series dataset.
-- **Ethical Considerations**:  
-  - Only scrape publicly visible data.
-  - Respect site `robots.txt`.
-  - Implement request delays to avoid overloading servers.
-
----
-
-## Expected Outcomes
-- An interactive dashboard showing:
-  - Highest-paying specialties.
-  - Regional pay comparisons.
-  - Seasonal demand and pay rate spikes.
-- Predictive insights for upcoming months.
+A keyword-matching algorithm was used to search this extracted text for terms related to certifications (e.g., "board certified"), work conditions (e.g., "weekend shifts"), and specific skills or environments (e.g., "trauma center," "ACLS," "Epic EMR"). This created new binary features that significantly improved the predictive power of the model.
 
 ---
 
 ## Tech Stack
-- **Languages:** Python
-- **Libraries:** requests, BeautifulSoup4, pandas, numpy, plotly, dash/streamlit, scikit-learn, prophet
-- **Database (optional):** SQLite / PostgreSQL
-- **Hosting (optional):** Streamlit Cloud, Heroku, Vercel
+- **Language:** Python
+- **Libraries:** Streamlit, Pandas, Scikit-learn, Plotly, NLTK, Joblib, Requests, BeautifulSoup4
 
 ---
+
+## How to Run This Project
+
+Follow these steps to set up and run the data pipeline and dashboard locally.
+
+### 1. Setup and Installation
+
+First, clone the repository and navigate into the project directory. It's recommended to use a virtual environment to manage dependencies.
+
+```bash
+# Create and activate a virtual environment (optional but recommended)
+python3 -m venv venv
+source venv/bin/activate
+
+# Install the required Python packages
+pip install -r requirements.txt
+```
+
+### 2. Run the Data Pipeline (Optional)
+
+The repository includes pre-processed data and a trained model. However, if you wish to refresh the data from the source, run the pipeline scripts in order.
+
+```bash
+# Step 1: Collect the raw job data from the web
+python3 src/data_collection.py
+
+# Step 2: Clean and process the raw data
+python3 src/data_cleaning.py
+
+# Step 3: Train the predictive model on the new data
+python3 src/modeling.py
+```
+
+### 3. Launch the Dashboard
+
+To explore the data and use the prediction tool, launch the Streamlit dashboard.
+
+```bash
+# Run the Streamlit application
+streamlit run src/dashboard.py
+```
+
+Your web browser should open a new tab with the interactive dashboard.
