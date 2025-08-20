@@ -9,6 +9,7 @@ import os
 import pandas as pd
 import streamlit as st
 import joblib
+import numpy as np
 
 # Load Model and Artifacts
 MODEL_PATH = os.path.join('models', 'random_forest_model.joblib')
@@ -67,8 +68,6 @@ else:
     available_cities = unique_values['state_city_map'].get(state, [])
     city = st.sidebar.selectbox("City", available_cities)
     
-    job_duration_days = st.sidebar.number_input("Job Duration (Days)", min_value=1, max_value=365, value=30)
-    
     st.sidebar.markdown("---")
     st.sidebar.subheader("Job Requirements (from Description)")
     
@@ -90,7 +89,8 @@ else:
     
     # Prepare the input for the model
     # 1. Set the numerical features
-    input_df['job_duration_days'] = job_duration_days
+    # Job duration is set to a default value of 30 as it has low feature importance.
+    input_df['job_duration_days'] = np.log1p(30)
     input_df['is_board_certified'] = 1 if is_board_certified else 0
     input_df['has_weekend_shift'] = 1 if has_weekend_shift else 0
     input_df['is_trauma_center'] = 1 if is_trauma_center else 0

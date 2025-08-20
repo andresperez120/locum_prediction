@@ -12,6 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 from sklearn.preprocessing import OneHotEncoder
 import joblib
+import numpy as np
 
 # Define the path to the processed data
 PROCESSED_DATA_PATH = os.path.join('data', 'processed', 'jobs.parquet')
@@ -42,6 +43,10 @@ def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
     ]
     target = 'rate_hourly'
     features = categorical_features + numerical_features
+    
+    # --- Data Cleaning & Preprocessing ---
+    # Log transform the job duration to handle skewness
+    df['job_duration_days'] = np.log1p(df['job_duration_days'])
     
     # Drop rows where the target is missing, as we can't train on them
     df_model = df[features + [target]].dropna(subset=[target])
@@ -110,6 +115,15 @@ def main():
     print(f"  - R-squared (R²): {r2:.2f}")
     print(f"  - Mean Absolute Error (MAE): ${mae:.2f}")
     print("------------------------")
+
+    # --- Feature Importance ---
+    print("\n--- Top 15 Feature Importances ---")
+    importances = model.feature_importances_
+    feature_names = X_train.columns
+    importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': importances})
+    importance_df = importance_df.sort_values(by='Importance', ascending=False)
+    print(importance_df.head(15))
+    print("------------------------------------")
     
     # Display a few sample predictions
     print("\n--- Sample Predictions ---")
