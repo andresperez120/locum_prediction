@@ -10,6 +10,8 @@ import pandas as pd
 import streamlit as st
 import joblib
 import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
 
 # Load Model and Artifacts
 MODEL_PATH = os.path.join('models', 'random_forest_model.joblib')
@@ -117,6 +119,38 @@ else:
     # Display Prediction
     st.header("Prediction")
     st.metric("Predicted Hourly Rate", f"${prediction:,.2f}")
+
+    st.markdown("---")
+    st.subheader("How the Model Made This Prediction")
+    st.markdown("""
+    Visualizing one of the many decision trees that make up the Random Forest model can provide insight into how the prediction was reached. The model follows a path down the tree, asking a series of yes/no questions about the job's features until it arrives at a final prediction.
+
+    *Note: The model's final prediction is an average of the results from all 100 trees in the forest. This is just one example.*
+    """)
+
+    if st.button("Show Example Decision Tree"):
+        with st.spinner("Generating tree visualization..."):
+            # Extract a single tree from the forest
+            single_tree = model.estimators_[0]
+            
+            # Get feature names for plotting
+            feature_names = input_df.columns.tolist()
+            
+            # Create a plot
+            fig, ax = plt.subplots(figsize=(25, 15))
+            plot_tree(
+                single_tree,
+                feature_names=feature_names,
+                filled=True,
+                rounded=True,
+                max_depth=3,  # Limit depth for readability
+                fontsize=10,
+                ax=ax
+            )
+            ax.set_title("Example Decision Tree Path (Top Levels)", fontsize=16)
+            
+            st.pyplot(fig)
+
 
     st.markdown("---")
     st.subheader("Inputs Used for This Prediction")
