@@ -1,0 +1,493 @@
+Feature,Importance
+specialty_Hematology Oncology,0.24397418491215134
+specialty_Pediatrics,0.10162826805310124
+specialty_Gastroenterology,0.06995592467176519
+specialty_Family Practice,0.051758475609120974
+specialty_Neurological Surgery,0.03706088026318402
+specialty_Cardiothoracic Surgery,0.034186208686032796
+specialty_Internal Medicine,0.031322059784417655
+specialty_Hospitalist,0.029855380949861444
+specialty_Vascular Surgery,0.02847914196198894
+specialty_Pediatric Hospitalist,0.02832943165919482
+specialty_Radiology - Interventional,0.025384343574378826
+specialty_Wound Care,0.02224496225552997
+specialty_Surgery - General,0.020251060079085018
+specialty_Cardiology - Interventional,0.017072218889242492
+specialty_Cardiovascular Surgery,0.01610984336723066
+specialty_Radiology,0.013843498568290459
+specialty_Urgent Care,0.011304259161377273
+specialty_Psychiatry,0.01052238606501422
+specialty_Cardiology - Electrophysiology,0.009982967528288141
+specialty_Urology,0.008914694344830167
+specialty_Cardiology - General,0.007510476049023796
+specialty_Physical Medicine and Rehab,0.006544663645696522
+is_board_certified,0.005568569878354485
+has_weekend_shift,0.0054018393861908435
+specialty_Adolescent Medicine,0.00533244228154146
+specialty_Neurology,0.005177118972853865
+state_Washington,0.0047727067922153305
+specialty_Pediatric Surgery,0.004713459980470616
+specialty_Emergency Medicine,0.00449138483866577
+city_Jonesboro,0.0043037894346826
+state_Wisconsin,0.003955428666426647
+specialty_Obstetrics Gynecology,0.0038061141327998165
+specialty_Anesthesiology,0.003663727280463359
+specialty_Allergy/Immunology,0.0035907068269734927
+specialty_Surgery - Breast,0.0030282694817759964
+state_Oregon,0.002946799973296948
+city_Marshfield,0.0029168642522281406
+city_Williamsport,0.002711932406908743
+state_Illinois,0.0024151706609320134
+city_Greenville,0.002295234599064343
+state_Kentucky,0.0020307293083788145
+state_Texas,0.001958214660369475
+specialty_Nephrology,0.0019333549424181053
+city_Clinton,0.0018432644431372381
+state_North Carolina,0.001823766981516933
+specialty_Surgery - ColoRectal,0.0017110137570502761
+city_Eurka,0.001540535706003661
+specialty_Physician Assistant,0.0014946033703992928
+city_Wasilla,0.0014516562057320449
+city_Walla Walla,0.0014397651958073005
+specialty_Surgery - Thoracic,0.001406217929428123
+state_Indiana,0.0013997326739480537
+state_Iowa,0.0013589376739140588
+city_Ottumwa,0.0013300921697532906
+city_Portland,0.001302098298215741
+state_Minnesota,0.001283582931122183
+city_Lexington,0.0012799413169685269
+specialty_Surgery - Trauma,0.0012780103353605833
+state_Alaska,0.0012635510887775072
+city_Spokane,0.001252068007346417
+state_Georgia,0.001237465717682057
+specialty_Gastroenterology - Hepatology,0.001207445093707732
+state_Colorado,0.0011974702461452018
+state_Tennessee,0.0011654319296914844
+city_Holyoke,0.0011082313755738562
+is_trauma_center,0.0010793039245194833
+city_Athens,0.0010585401635986897
+specialty_Neonatology,0.0010476134930672385
+city_Springfield,0.0010405984902316593
+city_Tyler,0.0010086405940405716
+city_El Paso,0.0010080527704717187
+state_Connecticut,0.0010062430333469623
+specialty_Geriatrics,0.0009952768656635311
+city_Davenport,0.0009913874811386862
+city_Erie,0.000954219055763712
+requires_acls,0.0009453141384417395
+city_Seattle,0.0009449262110573639
+city_Johnstown,0.000920952560397246
+city_Hanover,0.000917145403955765
+city_Napa,0.0008874796284583041
+specialty_Orthopedics,0.0008790362973096393
+state_Pennsylvania,0.0008346901188645505
+city_West Reading,0.0008322492602206532
+city_Brockton,0.0008063335462750208
+city_Suffolk,0.0008051116711767049
+specialty_Pathology,0.0008004973683345842
+state_Missouri,0.0007935525845840763
+specialty_Vascular Neurology,0.0007902672571205402
+city_Duluth,0.0007852481985317034
+state_Massachusetts,0.0007712348090412457
+city_Columbus,0.0007403213841330094
+specialty_Radiation Oncology,0.0007136454347634885
+state_Ohio,0.000682841504822152
+city_New Castle,0.0006629536639026915
+state_Florida,0.0006553744374867311
+specialty_Maternal Fetal Medicine,0.0006500783083004107
+city_Altoona,0.0006432160292367296
+state_Maryland,0.0006365399086051012
+city_Richmond,0.0006202196161121395
+city_Berlin,0.0006066722325515058
+state_California,0.0006002173317713901
+city_Cottonwood,0.0005913618557560453
+state_Michigan,0.0005880542682825254
+state_Alabama,0.000583568084004442
+city_Jacksonville,0.0005832231832341639
+state_New Mexico,0.0005740365922414583
+city_Colorado Springs,0.0005481688811551513
+city_Maple Grove,0.0005367336355224484
+city_Joplin,0.0005284492209802022
+city_Coudersport,0.0005279342779291342
+city_Everett,0.0005148508270360626
+city_Humble,0.0005129818776629416
+city_Asheboro,0.0004962905741067157
+city_Somerset,0.0004947891269730416
+city_St. Louis,0.0004890181537269014
+city_Louisville,0.00048055222904976475
+specialty_Pediatric Urology,0.00047619074505060566
+state_Arizona,0.00045763139316913663
+specialty_ENT / Otolaryngology,0.00044647421750679776
+specialty_Pulmonology - Critical care/Intensivist,0.0004347124612327811
+city_Carlisle,0.00041967765659184917
+state_Virginia,0.00040788792721774595
+city_Marquette,0.0003921272887856863
+city_Cumberland,0.00039204942640234936
+city_Turlock,0.00039150359876565503
+city_Celina,0.00038877537448079506
+city_Olympia,0.00038546045125668893
+city_Wellsboro,0.00038409857873198403
+city_Las Cruces,0.0003824114604862084
+city_Eureka,0.000377205429266995
+specialty_Endocrinology,0.0003745153964639638
+city_Edmonds,0.0003735022431194519
+city_Elizabethtown,0.0003731845867278663
+city_Detroit,0.0003710802653021347
+specialty_Plastics Surgery,0.0003655166220732662
+state_North Dakota,0.00036387109818966103
+city_Zanesville,0.0003619242486275881
+state_New York,0.00035831263621671663
+state_West Virginia,0.00035333165070856225
+state_South Carolina,0.0003236001832956884
+city_Birmingham,0.0003166715204369837
+city_St.Louis,0.00030448233288661147
+city_Urbana,0.00029640142535328955
+city_Hershey,0.00029616988569612754
+city_Rice Lake,0.0002833590837329156
+city_Bismarck,0.00027490331203965297
+specialty_Psychiatry - Child,0.0002706074683319416
+city_Crown Point,0.00026712332204910177
+city_Honesdale,0.00026567927414553055
+state_Montana,0.0002646006861068901
+city_Newberg,0.0002641106448609491
+city_Towson,0.0002616309407196464
+city_Dickinson,0.00026113085378588963
+city_Mishawaka,0.00025227120070078584
+city_Des Moines,0.00025213560159156526
+city_Columbia,0.00024317375544824295
+city_Frederick,0.00024296028463915469
+city_Eau Claire,0.0002322040520396522
+city_Pittsburg,0.00022620534815467132
+city_Worcester,0.0002151631680358551
+state_Kansas,0.0002122784103679427
+city_Minneapolis,0.0002068568571924267
+specialty_Dermatology,0.00020367584185404828
+city_Missoula,0.00020298605868036143
+city_Philadelphia,0.00019847301325926506
+city_Brunswick,0.0001969236180085687
+city_Albequerque,0.00019624596323081022
+specialty_CRNA,0.00019162471739893935
+city_Hannibal,0.0001891717794873193
+city_Galesburg,0.00018439464804274896
+specialty_Pediatric Gastroenterology,0.00018203421967527434
+city_Albuquerque,0.00018038941268335286
+city_Harlan,0.00017826194243235607
+city_Tucson,0.00017653202018386125
+city_Santa Rosa,0.00016985774531096608
+city_Puyallup,0.00016959863178110332
+city_Vincennes,0.00016748355271196654
+city_Pottstown,0.00016720077437970248
+city_Harlingen,0.00016621185062927122
+specialty_Psychologist,0.0001628474312168095
+city_Sierra Vista,0.00016192490575651878
+city_Pittsburgh,0.00016173459851209028
+specialty_Surgery - Maxillofacial,0.00015806363681790885
+city_Windber,0.00015787163538223486
+state_Maine,0.00015639718124726558
+city_Harrisburg,0.00015612200141632915
+city_Maywood,0.0001519743113287492
+city_Florence,0.00015062778945965948
+city_Stockbridge,0.0001501156546003044
+city_Richlands,0.0001494464667446254
+state_Vermont,0.00014682801663394097
+city_Watertown,0.00014602741090478092
+city_Fort Collins,0.00014284866632831913
+city_Wytheville,0.00014256790312824514
+city_Grass Valley,0.00013878590582459138
+city_Hancock,0.00013624338806301258
+specialty_Pulmonology,0.00013394788277405696
+state_Idaho,0.00012704865540225002
+city_Petaluma,0.00012298117604336956
+city_York,0.00011895013006578459
+city_Hot Springs,0.00011403872119781716
+city_Martinsville,0.00011165224744167302
+city_New Albany,0.00010374019832032984
+city_Logan,0.00010304553326511711
+city_Monroeville,0.00010023341833677516
+city_Lake Havasu City,9.950371216607871e-05
+city_Beckley,9.910042601499061e-05
+specialty_Pediatric Hematology,9.779684696000797e-05
+city_Weston,9.620221616057532e-05
+city_Clovis,9.390912116399225e-05
+city_Palm springs,9.245617189040815e-05
+city_Smithtown,9.173900908766543e-05
+state_Oklahoma,9.101565829014968e-05
+city_Issaquah,8.550967063629498e-05
+city_Durango,8.514296671898444e-05
+city_Pocatello,8.249424080054179e-05
+city_Peoria,8.201850045012523e-05
+city_Methuen,8.118542367540432e-05
+city_Robbinsdale,8.09575510345569e-05
+city_Fishers,7.893798306392945e-05
+specialty_Surgery - Bariatric,7.889381204382586e-05
+city_Superior,7.847640245521795e-05
+state_Arkansas,7.635959775899116e-05
+city_Lima,7.568621639035334e-05
+city_Lone Tree,7.406963117867211e-05
+city_Minocqua,7.38944418825649e-05
+city_Waukegan,7.325089288512851e-05
+city_Nacogdoches,7.272852476853302e-05
+city_Charlestown,7.115027023862994e-05
+city_Iron Mountain,7.088668849174538e-05
+city_Fairfield,6.978496244425836e-05
+city_Fort Lauderdale,6.917253534319624e-05
+specialty_Surgery - Hand,6.897063219618815e-05
+city_Mechanicsburg,6.600195083688229e-05
+city_Paducah,6.572716914795011e-05
+city_Livingston,6.554610998911645e-05
+state_Utah,6.44122908177575e-05
+city_Middletown,6.41153644406509e-05
+city_Lubbock,6.370701385245573e-05
+city_Traverse City,6.323748843579182e-05
+city_Reno,6.261347124026669e-05
+city_Hartsville,6.080846263913978e-05
+city_Yakima,6.064053393838363e-05
+city_New Lenox,5.955731188698866e-05
+state_Nevada,5.9556332320279636e-05
+city_Jamestown,5.7891480819598965e-05
+city_Sylva,5.755023952772422e-05
+city_Medford,5.6961153159402227e-05
+city_Billings,5.6662005108743493e-05
+city_Dodge City,5.6338460422437963e-05
+city_Las cruces,5.586006512679051e-05
+city_Sandy Springs,5.4672431523722836e-05
+city_San Antonio,5.294846292309686e-05
+city_Rutherfordton,5.2454308242804155e-05
+city_Fountain Valley,5.14431480550306e-05
+specialty_Infectious Disease,5.05865343700031e-05
+city_Newport News,5.0383445004531354e-05
+city_Price,4.82727867939393e-05
+city_Richland,4.7690398216398854e-05
+city_Tiffin,4.676904201924116e-05
+specialty_Orthopedics - Hand,4.6111994834619014e-05
+city_Nashville,4.533175417646058e-05
+city_Pennsacola,4.4522748688733505e-05
+city_Modesto,4.448906555223309e-05
+city_Mount Shasta,4.421225522888181e-05
+city_West Branch,4.3824338032660923e-05
+city_Mason City,4.368281817964293e-05
+city_Waterloo,4.343952120568301e-05
+city_Maysville,4.292917335036549e-05
+city_Red Bluff,4.259396997436576e-05
+specialty_Orthopedics - Trauma,4.220959665592595e-05
+city_Ottawa,4.007296429189097e-05
+city_Tacoma,3.911576416165314e-05
+city_Langhorne,3.875535872955682e-05
+city_Beaver Dam,3.8693815887146706e-05
+city_Tulsa,3.823797014068125e-05
+city_Grand Junction,3.808917906339004e-05
+city_Memphis,3.733143908274424e-05
+city_Prestonsburg,3.680695302093261e-05
+city_Indianapolis,3.5933629866147456e-05
+city_Oklahoma City,3.4221077894851705e-05
+city_Hickory,3.355086397978697e-05
+city_Eugene,3.334295889199496e-05
+city_Portage,3.2960069735254066e-05
+city_Humboldt,3.2716927368719106e-05
+city_Glenwood Springs,3.244760215880745e-05
+city_Amarillo,3.211324791941451e-05
+city_Paris,3.143622283129242e-05
+city_Fort Smith,3.1087009951615956e-05
+city_West Michigan,3.038292096806056e-05
+city_Boise,3.0231267334766363e-05
+specialty_Pediatric Neurology,3.0106096011323335e-05
+city_Wyomissing,3.0056089428151053e-05
+city_Warren,2.928363158941602e-05
+city_Mayfield,2.8415121226413736e-05
+city_Elmira,2.74509407996681e-05
+city_Montgomery,2.685468892339827e-05
+city_Palm Springs,2.6740417707475733e-05
+city_New Ulm,2.544184634336748e-05
+specialty_Radiology - Neuroradiology,2.5331386720221305e-05
+city_Sanford,2.5150025383851903e-05
+city_Hesperia,2.4915349086405346e-05
+city_Boyne City,2.4681128320576427e-05
+city_Hibbing,2.4532359105341226e-05
+city_Ishpeming,2.369183342082116e-05
+city_Tucker,2.3581123810513067e-05
+city_Silverdale,2.304332458295678e-05
+city_Portsmouth,2.2758515213040306e-05
+"city_Oklahoma City, OK",2.2698703727465514e-05
+city_Wilmington,2.2538360766000373e-05
+city_Coos Bay,2.1721683066231196e-05
+city_Washington,2.1581189821602978e-05
+city_Alabaster,2.0772739887791294e-05
+city_Mission Viejo,2.063435255939511e-05
+city_Hazard,1.9894892969403336e-05
+city_Youngstown,1.9871747803847772e-05
+city_Kennewick,1.975109562574096e-05
+city_West Mifflin,1.9001269194885248e-05
+city_Ft. Mill,1.8915828634461656e-05
+city_Lawrenceburg,1.8898682880932185e-05
+city_Wausau,1.8845676767902122e-05
+city_Phoenix,1.884077603935835e-05
+city_Bel Air,1.8388323351901733e-05
+city_Mukilteo,1.8228929946789617e-05
+city_Wilson,1.8192073046438277e-05
+city_Georgetown,1.8001092202148862e-05
+city_Dubuque,1.737645260489426e-05
+city_Tuscon,1.7024327166024237e-05
+city_Middlebury,1.6794162240843917e-05
+city_Prestonburg,1.6557313928018533e-05
+city_Fortuna,1.596924893798673e-05
+city_Wyethville,1.5592968783876646e-05
+city_Pasco,1.54999504635245e-05
+city_Findlay,1.5342598646432254e-05
+city_Natick,1.435556732175566e-05
+city_Odessa,1.4328654360844279e-05
+city_Phoenixville,1.4021608050780879e-05
+specialty_Radiology - Mammography,1.3900851498582594e-05
+city_Bay City,1.3643317227672934e-05
+city_Selma,1.3348173374933845e-05
+city_El Dorado,1.3235064681324532e-05
+city_Ashtabula,1.3065380043243565e-05
+city_Bridgeport,1.2758063961771007e-05
+city_Pittsfield,1.2337254128184371e-05
+state_Mississippi,1.2131791738509419e-05
+city_Cleveland,1.208447459087568e-05
+city_Talladega,1.1927349743710702e-05
+city_Lewiston,1.1439658160126092e-05
+city_Goodyear,1.1366197566485803e-05
+city_Porterville,1.1286992936093985e-05
+city_Petersburg,1.057981328126681e-05
+city_Morganton,1.0339085768993823e-05
+city_Lebanon,1.0167261417876935e-05
+city_Russellville,9.373203548038577e-06
+city_Anchorage,9.207939948371144e-06
+city_Pulaski,9.175585206802907e-06
+city_Rosenburg,9.067973577151623e-06
+city_Ardmore,8.930216657757116e-06
+city_Mc Keesport,8.782219637236321e-06
+city_Wyoming,8.459638673847968e-06
+city_Laurel,7.831467015340235e-06
+city_Sandy Springs & Jonesboro,7.598166695399692e-06
+city_Gallup,7.221800114197364e-06
+city_Ayer,6.623333604879411e-06
+city_Troy,6.5189354565773294e-06
+city_Vernal,6.416823855016846e-06
+city_Palestine,6.4076360721832664e-06
+"city_Waynsburg, PA",4.8585734186742055e-06
+city_Normal,4.530148964893792e-06
+city_Benntonville,4.513554700460195e-06
+city_McMinnville,4.494842981059793e-06
+city_Los Alamos,4.481128319884063e-06
+city_Omaha,4.463111475621652e-06
+city_Tampa,4.379809464823456e-06
+city_Questa,3.876004175290945e-06
+city_Lumberton,3.7580086913127323e-06
+city_walla walla,3.747476155382157e-06
+city_Salisbury,3.5718858947439663e-06
+city_Rock Hill,3.4006256526276e-06
+city_Elko,3.3972181402048803e-06
+state_Nebraska,3.393856654605199e-06
+city_Boardman,3.169791221635827e-06
+city_Delray Beach,3.1016426553468434e-06
+city_Grand Rapids,2.9917798816384105e-06
+city_Couldersport,2.8337237894556583e-06
+city_Hood River,2.7760417567676025e-06
+city_Alma,2.7289071253618632e-06
+city_Crescent City,2.6207261058007137e-06
+city_Jackson,2.544517680075052e-06
+city_Kirkland,2.4562168568732084e-06
+city_Stevens Point,2.384415918260309e-06
+city_Farmington,2.327043824470524e-06
+city_Highland,2.0797243939855915e-06
+city_Midland,2.059806457216549e-06
+state_New Hampshire,1.994507121647987e-06
+city_Garden City,1.9502401608546854e-06
+city_Chicago,1.9075007659997687e-06
+city_Framingham,1.866516153380268e-06
+city_Seneca,1.8555408151942719e-06
+city_Douglasville,1.4867347141431717e-06
+city_Counselor,1.4567029760479907e-06
+city_Arroyo Grande,1.442027723904177e-06
+city_Rockport,1.3014970521872445e-06
+city_Charleston,1.2243456935190513e-06
+city_Peshawbestown,1.2159194625280685e-06
+city_Bellingham,1.1483797519298882e-06
+city_Lake Havasu,1.1000811033209294e-06
+city_Mountainair,9.87654296514938e-07
+city_Bishop,7.831247333013121e-07
+city_Franklin,7.669199059063468e-07
+city_Baltimore,5.677784608816847e-07
+city_Ada,5.17613999763377e-07
+city_Galax,4.752563228338784e-07
+city_Fayetteville,3.803153894787249e-07
+city_McDonough,3.757841801576552e-07
+city_Flagstaff,3.299377305695971e-07
+city_Uniontown,7.530226365256874e-08
+city_Arcata,8.20157537107622e-18
+city_Pinehurst,7.980583977811778e-18
+city_Anderson,3.7601613667596564e-18
+city_Colville,0.0
+city_Cortland,0.0
+city_Decatur,0.0
+city_Clive,0.0
+city_Clearwater,0.0
+city_Pomeroy,0.0
+city_Washington Crescent City,0.0
+city_Williamsburg,0.0
+uses_epic_emr,0.0
+specialty_Nurse Practitioner,0.0
+state_New Jersey,0.0
+state_Wyoming,0.0
+city_Winchester,0.0
+city_Atlanta,0.0
+city_Williston,0.0
+city_Williamson,0.0
+city_Bardstown,0.0
+city_Champaign,0.0
+city_Bedford,0.0
+city_Bentonville,0.0
+city_Devils Lake,0.0
+city_Burlington,0.0
+city_Butler,0.0
+city_Cambridge,0.0
+city_Cape Girardeau,0.0
+city_Waston,0.0
+city_Berwyn,0.0
+city_Sugar Land,0.0
+city_Dyersville,0.0
+city_Easton,0.0
+city_Kearney,0.0
+city_Kettle Falls,0.0
+city_Roswell,0.0
+city_Lafayette,0.0
+city_Rolla,0.0
+city_Roaring Spring,0.0
+city_Riverton,0.0
+city_Lithonia,0.0
+city_Little Rock,0.0
+city_McKinleyville,0.0
+"city_MidMichigan, West Branch, Clare, Alma, Midland,",0.0
+city_Milwaukie,0.0
+city_Muncie,0.0
+city_Norwood,0.0
+city_Oklahoma,0.0
+city_Olney,0.0
+city_Oregon City,0.0
+city_Pekin,0.0
+city_Portneuf,0.0
+city_San Luis Obispo,0.0
+city_Jefferson Hills,0.0
+city_Santa Monica,0.0
+city_Gallipolis,0.0
+city_Thomasville,0.0
+city_Test,0.0
+city_Farrell,0.0
+city_Syracuse,0.0
+city_Festus,0.0
+city_Polson,0.0
+city_Statesville,0.0
+city_St. Petersburg,0.0
+city_Springdale,0.0
+city_Hobbs,0.0
+city_Grants,0.0
+city_Harker Heights,0.0
+city_Healdsburg,0.0
+city_Henderson,0.0
+city_Shenandoah,0.0
+city_Sewell,0.0
+"city_Henderson, NC",0.0
+city_Seaside,0.0
+job_duration_days,0.0

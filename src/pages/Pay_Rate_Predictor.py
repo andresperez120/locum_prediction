@@ -155,3 +155,27 @@ else:
     st.markdown("---")
     st.subheader("Inputs Used for This Prediction")
     st.write(input_df.T.rename(columns={0: 'Value'}))
+
+    st.markdown("---")
+    st.subheader("Top Predictive Features")
+    st.markdown("""
+    The table below shows the top 15 features that most heavily influence the model's pay rate predictions.
+
+    **What does the 'Importance' percentage mean?**
+    In a Random Forest model, feature importance measures how much a particular feature contributes to making accurate predictions. A higher percentage means the model relies more heavily on that feature. For example, an importance of 24.4% for "specialty_Hematology Oncology" means that this single feature accounts for nearly a quarter of the model's decision-making power.
+    """)
+
+    # Load and display feature importances
+    FI_PATH = os.path.join('models', 'feature_importances.csv')
+    if os.path.exists(FI_PATH):
+        fi_df = pd.read_csv(FI_PATH)
+        
+        # Clean up the feature names for better readability
+        fi_df['Feature'] = fi_df['Feature'].str.replace('specialty_', '').str.replace('_', ' ')
+        
+        # Format importance as a percentage
+        fi_df['Importance'] = fi_df['Importance'].apply(lambda x: f"{x:.1%}")
+        
+        st.dataframe(fi_df.head(15), use_container_width=True)
+    else:
+        st.warning("Feature importance data not found. Please re-run the modeling pipeline.")

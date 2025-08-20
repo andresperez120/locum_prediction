@@ -139,6 +139,7 @@ def main():
     joblib.dump(model, os.path.join(MODEL_OUTPUT_PATH, 'random_forest_model.joblib'))
     X_test.to_parquet(os.path.join(MODEL_OUTPUT_PATH, 'X_test.parquet'))
     y_test.to_frame().to_parquet(os.path.join(MODEL_OUTPUT_PATH, 'y_test.parquet'))
+    importance_df.to_csv(os.path.join(MODEL_OUTPUT_PATH, 'feature_importances.csv'), index=False)
     
     print("Artifacts saved successfully.")
 
